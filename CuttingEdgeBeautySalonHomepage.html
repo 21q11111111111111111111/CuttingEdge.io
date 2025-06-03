@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting Edge - Салон красоты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scroll.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">cutting edge</div>
+        <nav class="nav-menu">
+            <div class="nav-item dropdown">
+                <a href="#services" class="nav-item">Услуги салона</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">
+                        <img src="../assets/images/zz.svg" alt="Стрижка" class="dropdown-icon">
+                        <div class="dropdown-content">
+                            <span class="dropdown-title">Стрижка</span>
+                            <span class="dropdown-price">от 2000 ₽</span>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="../assets/images/hair-svgrepo-com.svg" alt="Окрашивание" class="dropdown-icon">
+                        <div class="dropdown-content">
+                            <span class="dropdown-title">Окрашивание</span>
+                            <span class="dropdown-price">от 3500 ₽</span>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="../assets/images/manicure-fashion-svgrepo-com.svg" alt="Маникюр"
+                            class="dropdown-icon">
+                        <div class="dropdown-content">
+                            <span class="dropdown-title">Маникюр</span>
+                            <span class="dropdown-price">от 1500 ₽</span>
+                        </div>
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="../assets/images/lotion-svgrepo-com.svg" alt="Уход за лицом" class="dropdown-icon">
+                        <div class="dropdown-content">
+                            <span class="dropdown-title">Уход за лицом</span>
+                            <span class="dropdown-price">от 2500 ₽</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#about" class="nav-item">О нас</a>
+            <a href="#portfolio" class="nav-item">Портфолио работ</a>
+            <a href="#testimonials" class="nav-item">Отзывы</a>
+            <a href="#map" class="nav-item">Как нас найти</a>
+            <button class="header-btn" onclick="openBookingModal()">Записаться</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Добро пожаловать в наш салон красоты – ваш путь к совершенству!</h1>
+            <p class="hero-description">Мы предлагаем широкий спектр услуг для вашего красоты и комфорта. Запишитесь
+                прямо сейчас!</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openBookingModal()">Записаться</button>
+                <a href="#services" class="btn-secondary">Услуги</a>
+            </div>
+        </div>
+        <img src="../assets/images/img_placeholder_image.png" alt="Интерьер салона красоты" class="hero-image">
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="services-content">
+            <h2 class="services-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="../assets/images/zz.svg" style="width:36px;height:36px;" alt="Стрижка"
+                        class="service-image">
+                    <h3 class="service-title">Стрижка</h3>
+                    <p class="service-description">Профессиональные стрижки для женщин и мужчин</p>
+                </div>
+                <div class="service-card">
+                    <img src="../assets/images/hair-svgrepo-com.svg" style="width:36px;height:36px;" alt="Окрашивание"
+                        class="service-image">
+                    <h3 class="service-title">Окрашивание</h3>
+                    <p class="service-description">Современные техники окрашивания волос</p>
+                </div>
+                <div class="service-card">
+                    <img src="../assets/images/manicure-fashion-svgrepo-com.svg" style="width:36px;height:36px;"
+                        alt="Маникюр" class="service-image">
+                    <h3 class="service-title">Маникюр</h3>
+                    <p class="service-description">Маникюр и уход за ногтями</p>
+                </div>
+                <div class="service-card">
+                    <img src="../assets/images/lotion-svgrepo-com.svg" style="width:36px;height:36px;"
+                        alt="Уход за лицом" class="service-image">
+                    <h3 class="service-title">Уход за лицом</h3>
+                    <p class="service-description">Процедуры по уходу за кожей лица</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Наши работы</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://t3.ftcdn.net/jpg/14/47/07/48/240_F_1447074851_lQotyjjjT6mooPYIXv2Tyo0hHcHihCHM.jpg"
+                        alt="Работа 1" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://t3.ftcdn.net/jpg/12/62/31/34/240_F_1262313454_56zAgyOJ188dFlh59HQHFDXTcTzcS74S.jpg"
+                        alt="Работа 2" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://t3.ftcdn.net/jpg/13/26/68/46/240_F_1326684683_4YWULx4lxVpLlsnMZGFqwgPRKqeumzOd.jpg"
+                        alt="Работа 3" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://t4.ftcdn.net/jpg/12/72/01/91/240_F_1272019138_PsxSDn4EDgdIpOt7aDWo1dCykW49PM3d.jpg"
+                        alt="Работа 4" class="portfolio-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="about-title">Ваш идеальный салон красоты: стиль, качество и индивидуальный подход к каждому
+                клиенту.</h2>
+        </div>
+        <div class="about-content">
+            <p class="about-description">Наш салон предлагает широкий спектр услуг, включая парикмахерские,
+                косметологические и ногтевые процедуры. Мы гордимся профессионализмом наших мастеров и индивидуальным
+                подходом к каждому клиенту. Ваше удовлетворение — наша главная цель!</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2 class="cta-title">Запишитесь на услуги прямо сейчас</h2>
+        <p class="cta-description">Выберите удобное время и мастера для вашего преображения. Мы ждем вас в нашем салоне!
+        </p>
+        <div class="cta-buttons">
+            <button class="btn-primary" onclick="openBookingModal()">Записаться</button>
+            <a href="#services" class="btn-secondary">Услуги</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonial-section">
+        <div class="testimonial-content">
+            <img src="../assets/images/img_placeholder_lightbox.png" alt="Довольный клиент в салоне"
+                class="testimonial-image">
+            <div class="testimonial-text">
+                <img src="../assets/images/img_stars.svg" alt="5 звезд" class="stars">
+                <blockquote class="testimonial-quote">«Лучший салон, в котором я когда-либо была! Мастера знают свое
+                    дело и всегда готовы помочь.»</blockquote>
+                <div class="testimonial-author">Анна Петрова</div>
+                <div class="testimonial-position">Директор, Beauty Co.</div>
+                <div class="testimonial-nav">
+                    <button onclick="previousTestimonial()" class="nav-btn nav-btn-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button onclick="nextTestimonial()" class="nav-btn nav-btn-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-section">
+        <div class="why-choose-content">
+            <h2 class="why-choose-title">Почему выбирают наш салон: качество, профессионализм и индивидуальный подход.
+            </h2>
+            <p class="why-choose-description">Наш салон предлагает широкий спектр услуг, выполненных опытными мастерами.
+                Мы гарантируем высокое качество и комфортное обслуживание для каждого клиента.</p>
+        </div>
+        <img src="../assets/images/img_placeholder_image_640x600.png" alt="Профессиональное оборудование салона"
+            class="why-choose-image">
+    </section>
+
+    <section id="map" class="map-section">
+        <div class="map-content">
+            <h2 class="map-title">Как нас найти</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2169.5458543243837!2d40.92670281584216!3d57.76728174705784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ad4583c3782a67%3A0x3a18c0e8c79c644e!2z0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDRg9C7Liwg0JrQvtGB0YLRgNC-0LzQsA!5e0!3m2!1sru!2sru!4v1710425144330!5m2!1sru!2sru"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="map-info">
+                <div class="info-item">
+                    <h3>Адрес</h3>
+                    <p>г. Кострома, ул. Костромская, д. 1</p>
+                </div>
+                <div class="info-item">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Вс: 10:00 - 21:00</p>
+                </div>
+                <div class="info-item">
+                    <h3>Контакты</h3>
+                    <p>+7 (999) 123-45-67</p>
+                    <p>info@cuttingedge.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                <span class="company-name">cutting edge</span>
+                <span class="copyright-year">© 2025</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="bookingModal" class="modal" style="display: none;">
+        <div style="background: white; padding: 40px; border-radius: 12px; max-width: 500px; width: 90%;">
+            <h3 style="margin-bottom: 20px; font-family: 'BioRhyme', serif; font-size: 24px;">Записаться на услугу</h3>
+            <form onsubmit="submitBooking(event)">
+                <div style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Имя:</label>
+                    <input type="text" required
+                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Телефон:</label>
+                    <input type="tel" required
+                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Услуга:</label>
+                    <select required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                        <option value="">Выберите услугу</option>
+                        <option value="haircut">Стрижка</option>
+                        <option value="coloring">Окрашивание</option>
+                        <option value="manicure">Маникюр</option>
+                        <option value="facial">Уход за лицом</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 24px;">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500;">Дата:</label>
+                    <input type="date" required
+                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px;">
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <button type="submit" class="btn-primary" style="flex: 1;">Записаться</button>
+                    <button type="button" onclick="closeBookingModal()" class="btn-secondary"
+                        style="flex: 1;">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
